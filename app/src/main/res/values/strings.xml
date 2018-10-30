@@ -2,6 +2,9 @@
     <string name="app_name">Northern Lights Animation</string>
     <string name="action_settings">Setings</string>
     <string name="btnStart">Start Frame Animation</string>
+    <string name="btnStop3">Stop Frame Animation</string>
     <string name="btnStop">Start Tween Animation</string>
+    <string name="btnStop2">Stop Tween Animation</string>
+
     <string name="imgDescription">Northern Lights Image</string>
 </resources>

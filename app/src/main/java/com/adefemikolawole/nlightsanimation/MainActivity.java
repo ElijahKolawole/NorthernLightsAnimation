@@ -1,5 +1,6 @@
 package com.adefemikolawole.nlightsanimation;
 
+import android.content.Intent;
 import android.graphics.drawable.AnimationDrawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -21,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
         Button button1 = findViewById(R.id.btnStart);
         Button button2 = findViewById(R.id.btnStop);
+        Button btnStop3 = findViewById(R.id.btnStop3);
 
 
         button1.setOnClickListener(new View.OnClickListener() {
@@ -34,8 +36,17 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 lightsAnimation.stop();
+                startActivity(new Intent(MainActivity.this, Tween.class));
             }
         });
+
+        btnStop3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                lightsAnimation.stop();
+            }
+        });
+
 
 
     }
